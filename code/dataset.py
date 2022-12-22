@@ -13,7 +13,7 @@ IMG_WIDTH = 664
 def get_onehot(file_path):
     # convert the path to a list of path components
     parts = tf.strings.split(file_path, os.path.sep)
-    onehot = tf.reshape(tf.one_hot(tf.where(CLASS_NAMES == parts[-2]), 2), (2, ))
+    onehot = tf.reshape(tf.one_hot(tf.where(CLASS_NAMES == parts[-2]), 2), (2,))
     return onehot
 
 
