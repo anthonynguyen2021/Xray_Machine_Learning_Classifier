@@ -4,3 +4,4 @@ data/*
 model/*
 __pycache__
 weights/*
+.DS_Store
